@@ -1,14 +1,14 @@
 export const createBoard = (card) => {
-   if(card %2 !== 0){
+   if(card % 2 != 0){
        throw Error("An even number of elements is required")
 
    }
    let listBoard= [];
    let count = 0;
       for (let i = 0; i < card / 2; i++) {
-        let symbols = String.fromCharCode(70 + count);
+        let symbols = String.fromCharCode(65 + count);
         let item1 = {
-          backend: `??`,
+          backend: "??",
           frontend: symbols,
           state: false,
           done: false,

@@ -13,6 +13,7 @@ export const createBoard = (card) => {
           state: false,
           done: false,
           key: `card_${i}`,
+          styles : "item",
         };
         let item2 ={ ...item1 };
         listBoard = [...listBoard, item1, item2];
